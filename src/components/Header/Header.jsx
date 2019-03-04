@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import headerMinerva from '../../imgs/headerMinerva.jpg';
+import headerBg from '../../imgs/headerBg.png';
 import headerLogo from '../../imgs/headerLogo.png';
 import styled, { css } from 'styled-components'
 import Nav from '../Nav'
@@ -7,8 +7,7 @@ class Header extends Component {
     render() {
         return (
             <HeaderContainer>
-                <ImageContainer url={headerMinerva}></ImageContainer>
-                <FilterContainer></FilterContainer>
+                <ImageContainer url={headerBg}></ImageContainer>
                 <ContentContainer>
                     <HeaderInnerContainer>
                         <Nav />
@@ -46,14 +45,6 @@ const ImageContainer = styled.div`
     ${props => props.url && css`
           background: url(${props.url}) center top no-repeat;
     `};
-`;
-
-const FilterContainer = styled.div`
-    width:100%;
-    height:100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    position: absolute;
-    z-index: 2;
 `;
 
 const HeaderInnerContainer = styled.div`

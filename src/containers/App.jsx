@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
+import Mision from '../components/Mision';
+import Clients from '../components/Clients';
 
 class App extends Component {
   render() {
     return (
       <>
         <Header />
-        <div>Mission</div>
-        <div>Mission Vision</div>
-        <div>OUR Clients</div>
-        <div>Portfolio</div>
-        <div>About Us</div>
-        <div>Contact</div>
+        <Mision />
+        <Clients />
       </>
     );
   }
